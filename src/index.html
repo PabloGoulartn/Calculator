@@ -5,42 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <main>
-        <section>
-            <label for="bill">Bill</label>
-            <input type="number">
-        </section>
+<body class="bg-LightGrayCyan h-screen flex justify-center items-center font-SpaceMono text-sm">
+    <main class="bg-white flex items-center rounded-2xl max-w-3xl h-96">
+        <article class="pl-8">
+            <section class="flex flex-col mb-7">
+                <label for="bill" class="text-DarkCyan">Bill</label>
+                <input type="number" placeholder="0" min="0" id="bill" class="text-DarkCyan bg-VeryLightGrayCyan rounded-md h-8 text-right">
+            </section>
+    
+            <section class="w-72">
+                <fieldset>
+                    <legend class="text-DarkCyan">Select Tip %</legend>
+                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3">5%</button>
+                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3 ml-2">10%</button>
+                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3 ml-2">15%</button>
+                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3">25%</button>
+                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3 ml-2">50%</button>
+                    <button class="bg-VeryLightGrayCyan text-DarkCyan text-white w-20 h-9 rounded-md my-3 ml-2">Custom</button>
+                </fieldset>
+            </section>
+    
+            <section class="flex flex-col mt-7">
+                <label for="Number of People" class="text-DarkCyan">Number of People</label>
+                <input type="number" id="Number of People" min="0" class="bg-VeryLightGrayCyan rounded-md h-8 text-right">
+            </section>
+        </article>
 
-        <section>
-            <fieldset>
-                <legend>Select Tip</legend>
-                <button>5%</button>
-                <button>10%</button>
-                <button>15%</button>
-                <button>25%</button>
-                <button>50%</button>
-                <button>Custom</button>
-            </fieldset>
-        </section>
-
-        <section>
-            <label>Number of People</label>
-            <input type="number">
-        </section>
-
-        <section>
-            <div>
-                <h2>Tip Amount</h2>
-                <p>/ person</p>
-                <p>$0.00</p>
+        <section class="bg-VeryDarkCyan w-80 h-5/6 mx-8 rounded-xl flex flex-col">
+            <div class="flex justify-between my-8 px-8">
+                <span class="flex flex-col">         
+                    <h2>Tip Amount</h2>
+                    <p>/ person</p>
+                </span>
+                <p class="text-2xl">$0.00</p>
             </div>
 
-            <div>
-                <h2>Total</h2>
-                <p>/ person</p>
-                <p>$0.00</p>
+            <div class="flex justify-between px-8">
+                <span class="flex flex-col">            
+                    <h2>Total</h2>
+                    <p>/ person</p>
+                </span>
+                <p class="text-2xl">$0.00</p>
             </div>
 
             <button type="reset">Reset</button>
