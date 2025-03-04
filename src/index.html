@@ -12,7 +12,7 @@
         <article class="pl-8">
             <section class="flex flex-col mb-7">
                 <label for="bill" class="text-DarkCyan">Bill</label>
-                <input type="number" placeholder="0" min="0" id="bill" class="text-DarkCyan bg-VeryLightGrayCyan rounded-md h-8 text-right">
+                <input type="number" placeholder="0" min="0" id="bill" class="bill text-DarkCyan bg-VeryLightGrayCyan rounded-md h-8 text-right">
             </section>
     
             <section class="w-72">
@@ -28,8 +28,11 @@
             </section>
     
             <section class="flex flex-col mt-7">
-                <label for="Number of People" class="text-DarkCyan">Number of People</label>
-                <input type="number" id="Number of People" min="0" class="bg-VeryLightGrayCyan rounded-md h-8 text-right">
+                <span class="flex justify-between pb-2">
+                    <label for="Number of People" class="text-DarkCyan">Number of People</label>
+                    <p class="error hidden text-ColorError">Can't be zero</p>
+                </span>
+                <input type="number" id="Number of People" placeholder="0" min="0" class="border-2 numberPeople bg-VeryLightGrayCyan rounded-md h-9 text-right">
             </section>
         </article>
 
@@ -47,11 +50,13 @@
                     <h2>Total</h2>
                     <p>/ person</p>
                 </span>
-                <p class="text-2xl">$0.00</p>
+                <p class="total text-2xl">$0.00</p>
             </div>
 
             <button type="reset">Reset</button>
         </section>
     </main>
+
+    <script src="JS/Base.jsx"></script>
 </body>
 </html>
