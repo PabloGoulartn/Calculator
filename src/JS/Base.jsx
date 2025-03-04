@@ -2,13 +2,19 @@ let bill = document.querySelector(".bill");
 let numberPeople = document.querySelector(".numberPeople");
 let btn = document.querySelectorAll("button");
 let custom = document.querySelector(".custom");
+let amount = document.querySelector(".amount");
 let total = document.querySelector(".total");
 let selectedTip = 0;
 
-function Sum(bill, selectedTip, numberPeople)
+function Sum()
 {
     let value = (Number(bill.value) * Number(selectedTip.replace('%', '')) / 100) + Number(bill.value);
     return (Number(value) / numberPeople.value).toFixed(2);
+}
+
+function tipAmount()
+{
+    return Math.floor((Number(bill.value) * Number(selectedTip.replace('%', '')) / 100) / numberPeople.value * 100) / 100;
 }
 
 btn.forEach(button => {
@@ -16,7 +22,8 @@ btn.forEach(button => {
         if (numberPeople.value > 0)
         {
             selectedTip = event.target.textContent;
-            total.textContent = Sum(bill, selectedTip, numberPeople);
+            total.textContent = Sum();
+            amount.textContent = tipAmount();
         }
         else
         {
