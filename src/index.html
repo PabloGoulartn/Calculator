@@ -27,7 +27,7 @@
                 </fieldset>
             </section>
     
-            <section class="flex flex-col mt-7">
+            <section class="flex flex-col mt-7 pb-8">
                 <span class="flex justify-between pb-2">
                     <label for="Number of People" class="text-DarkCyan">Number of People</label>
                     <p class="error hidden text-ColorError">Can't be zero</p>
@@ -39,21 +39,23 @@
         <section class="bg-VeryDarkCyan w-80 h-5/6 mx-8 rounded-xl flex flex-col">
             <div class="flex justify-between my-8 px-8">
                 <span class="flex flex-col">         
-                    <h2>Tip Amount</h2>
-                    <p>/ person</p>
+                    <h2 class="text-white">Tip Amount</h2>
+                    <p class="text-DarkCyan">/ person</p>
                 </span>
-                <p class="text-2xl">$0.00</p>
+                <p class="text-2xl text-StrongCyan">$0.00</p>
             </div>
 
             <div class="flex justify-between px-8">
                 <span class="flex flex-col">            
-                    <h2>Total</h2>
-                    <p>/ person</p>
+                    <h2 class="text-white">Total</h2>
+                    <p class="text-DarkCyan">/ person</p>
                 </span>
-                <p class="total text-2xl">$0.00</p>
+                <p class="total text-2xl text-StrongCyan">$0.00</p>
             </div>
 
-            <button type="reset">Reset</button>
+            <span class="flex items-center flex-col mt-auto mb-6">
+                <button type="reset" class="uppercase bg-StrongCyan text-VeryDarkCyan h-9 w-5/6 rounded-md">Reset</button>
+            </span>
         </section>
     </main>
 
