@@ -11,19 +11,19 @@
     <main class="bg-white flex items-center rounded-2xl max-w-3xl h-96">
         <article class="pl-8">
             <section class="flex flex-col mb-7">
-                <label for="bill" class="text-DarkCyan">Bill</label>
-                <input type="number" placeholder="0" min="0" id="bill" class="bill text-DarkCyan bg-VeryLightGrayCyan rounded-md h-8 text-right">
+                <label for="bill" class="text-DarkCyan pb-2">Bill</label>
+                <input type="number" placeholder="0" min="0" id="bill" class="bill border-2 outline-none focus:border-StrongCyan text-VeryDarkCyan bg-VeryLightGrayCyan rounded-md h-9 text-right">
             </section>
     
             <section class="w-72">
                 <fieldset>
                     <legend class="text-DarkCyan">Select Tip %</legend>
-                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3">5%</button>
-                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3 ml-2">10%</button>
-                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3 ml-2">15%</button>
-                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3">25%</button>
-                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3 ml-2">50%</button>
-                    <button class="bg-VeryLightGrayCyan text-DarkCyan text-white w-20 h-9 rounded-md my-3 ml-2">Custom</button>
+                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3 focus:bg-ButtonFocus focus:text-VeryDarkCyan">5%</button>
+                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3 ml-2 focus:bg-ButtonFocus focus:text-VeryDarkCyan">10%</button>
+                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3 ml-2 focus:bg-ButtonFocus focus:text-VeryDarkCyan">15%</button>
+                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3 focus:bg-ButtonFocus focus:text-VeryDarkCyan">25%</button>
+                    <button class="bg-VeryDarkCyan text-white w-20 h-9 rounded-md my-3 ml-2 focus:bg-ButtonFocus focus:text-VeryDarkCyan">50%</button>
+                    <button class="bg-VeryLightGrayCyan text-DarkCyan w-20 h-9 rounded-md my-3 ml-2">Custom</button>
                 </fieldset>
             </section>
     
@@ -32,7 +32,7 @@
                     <label for="Number of People" class="text-DarkCyan">Number of People</label>
                     <p class="error hidden text-ColorError">Can't be zero</p>
                 </span>
-                <input type="number" id="Number of People" placeholder="0" min="0" class="border-2 numberPeople bg-VeryLightGrayCyan rounded-md h-9 text-right">
+                <input type="number" id="Number of People" placeholder="0" min="0" class="text-VeryDarkCyan outline-none focus:border-StrongCyan border-2 numberPeople bg-VeryLightGrayCyan rounded-md h-9 text-right">
             </section>
         </article>
 

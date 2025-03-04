@@ -9,6 +9,8 @@
         VeryDarkCyan: 'hsl(183, 100%, 15%)',
         DarkCyan: 'hsl(186, 14%, 43%)',
         ColorError: '#B48372',
+        StrongCyan: 'hsl(172, 67%, 45%)',
+        ButtonFocus: '#9FE8DF'
       },
       fontFamily: {
         SpaceMono: ['"Space Mono"', 'monospace']
