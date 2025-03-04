@@ -691,6 +691,10 @@ video {
   padding-left: 2rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-right {
   text-align: right;
 }
@@ -747,6 +751,10 @@ video {
 .focus\:bg-ButtonFocus:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(159 232 223 / var(--tw-bg-opacity, 1));
+}
+
+.focus\:text-right:focus {
+  text-align: right;
 }
 
 .focus\:text-DarkCyan:focus {
