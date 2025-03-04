@@ -1,9 +1,8 @@
-//145 + 15% / numberofpeoaple;
-
 let bill = document.querySelector(".bill");
 let numberPeople = document.querySelector(".numberPeople");
 let btn = document.querySelectorAll("button");
-let total = document.querySelector(".total"); // Definição do total
+let custom = document.querySelector(".custom");
+let total = document.querySelector(".total");
 let selectedTip = 0;
 
 function Sum(bill, selectedTip, numberPeople)
@@ -26,3 +25,10 @@ btn.forEach(button => {
         }
     });
 });
+
+document.addEventListener("click", () => {
+    if (bill.value > 0 && numberPeople.value > 0)
+    {
+        total.textContent = Sum(bill, custom.value, numberPeople);
+    }
+})

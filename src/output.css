@@ -673,11 +673,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-ButtonFocus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(159 232 223 / var(--tw-bg-opacity, 1));
-}
-
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -689,6 +684,18 @@ video {
 
 .pl-8 {
   padding-left: 2rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .text-center {
@@ -723,14 +730,14 @@ video {
   color: hsl(186 14% 43% / var(--tw-text-opacity, 1));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
 .text-VeryDarkCyan {
   --tw-text-opacity: 1;
   color: hsl(183 100% 15% / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .outline-none {
@@ -738,14 +745,15 @@ video {
   outline-offset: 2px;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
 .focus\:border-StrongCyan:focus {
   --tw-border-opacity: 1;
   border-color: hsl(172 67% 45% / var(--tw-border-opacity, 1));
-}
-
-.focus\:bg-black:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .focus\:bg-ButtonFocus:focus {
@@ -755,11 +763,6 @@ video {
 
 .focus\:text-right:focus {
   text-align: right;
-}
-
-.focus\:text-DarkCyan:focus {
-  --tw-text-opacity: 1;
-  color: hsl(186 14% 43% / var(--tw-text-opacity, 1));
 }
 
 .focus\:text-VeryDarkCyan:focus {
