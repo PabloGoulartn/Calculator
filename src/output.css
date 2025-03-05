@@ -830,12 +830,28 @@ video {
   background-image: url(images/icon-dollar.svg);
 }
 
+.bg-\[length\:1\.5rem\] {
+  background-size: 1.5rem;
+}
+
 .bg-clip-content {
   background-clip: content-box;
 }
 
 .bg-left {
   background-position: left;
+}
+
+.bg-\[left_0\.5rem_center\] {
+  background-position: left 0.5rem center;
+}
+
+.bg-\[left_0\.7rem_center\] {
+  background-position: left 0.7rem center;
+}
+
+.bg-\[left_0\.6rem_center\] {
+  background-position: left 0.6rem center;
 }
 
 .bg-no-repeat {
